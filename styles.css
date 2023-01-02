@@ -124,23 +124,34 @@ main {
     line-height: 1.6rem;
     color: var(--grey);
 }
-.main-currency-table {
+.main-currency-table,
+.main-comission-table {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.main-currency-table .currency-table__title {
+.main-currency-table .table-title,
+.main-comission-table .table-title {
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.3rem;
-    color: var(--bitcoin-orange);
-
 }
-.currency-table__container {
+.main-currency-table .currency__title {
+    color: var(--bitcoin-orange);
+}
+.main-comission-table .comission__title {
+    color: var(--secondary-blue);
+}
+.currency-table__container,
+.comission-table__container {
     display: flex;
     justify-content: center;
     width: 90%;
@@ -148,23 +159,31 @@ main {
     max-width: 300px;
     margin: 0 auto;
 }
-.currency-table__container .table {
+.currency-table__container .table,
+.comission-table__container .table {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     background-color: var(--just-white);
+    border-radius: 15px;
+    column-gap: 1px;
+    row-gap: 1px;
 }
-.currency-table__container .table__top-left {
+.table .table__top-left,
+.comission-table__container .table__top-left {
     border-top-left-radius: 15px;
 }
-.currency-table__container .table__top-right {
+.currency-table__container .table__top-right,
+.comission-table__container .table__top-right {
     border-top-right-radius: 15px;
 }
-.currency-table__container .table__bottom-left {
+.currency-table__container .table__bottom-left,
+.comission-table__container .table__bottom-left {
     border-bottom-left-radius: 15px;
 }
-.currency-table__container .table__bottom-right {
+.currency-table__container .table__bottom-right,
+.comission-table__container .table__bottom-right {
     border-bottom-right-radius: 15px;
 }
 .table div {
@@ -173,7 +192,7 @@ main {
     line-height: 19.3px;
     color: #B5B0AC;
     text-align: start;
-    /* border: 0.1px solid var(--grey); */
+    border: 0.1px solid var(--grey);
 }
 .table .table__right {
     font-size: 1.4rem;
@@ -183,7 +202,16 @@ main {
     display: flex;
     justify-content: space-between;
 }
-.table .down {
+.table .table__right-comission {
+    font-size: 1.4rem;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #757575;
+    display: flex;
+    justify-content: center;
+}
+
+.table__right .down {
     width: 20px;
     height: auto;
     background-image: url(./assets/icons/trending-down.svg);
@@ -191,11 +219,31 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 }
-.table .up {
+.table__right .up {
     width: 20px;
     height: auto;
     background-image: url(./assets/icons/trending-up.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.table__message{
+    width: 219px;
+    margin-top: 1.6rem;
+    padding: 0.8rem;
+    display: inline-block;
+    height: 31px;
+    border-radius: 8px;
+}
+.table__message p {
+    color: var(--warm-black);
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 14.52px;
+}
+.currency-color {
+    background-color: var(--soft-orange);
+}
+.comission-color {
+    background-color: var(--soft-blue);
 }
