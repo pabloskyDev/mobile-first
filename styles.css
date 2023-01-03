@@ -332,30 +332,21 @@ main {
     display: inline-block;
     width: 20px;
     height: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.product-detail__card .clock {
+.clock {
     background: url('./assets/icons/clock.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.product-detail__card .eye {
+.eye {
     background: url('./assets/icons/eye.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.product-detail__card .check-circle {
+.check-circle {
     background: url('./assets/icons/check-circle.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.product-detail__card .dollar-sign {
+.dollar-sign {
     background: url('./assets/icons/dollar-sign.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .product__card-title {
     margin: 12px 0;
