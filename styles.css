@@ -6,6 +6,7 @@
     --warm-black: #201e1c;
     --black: #282623;
     --grey: #bababa;
+    --dark-grey: #808080;
     --off-white: #faf8f7;
     --just-white: #fff;
 }
@@ -275,4 +276,96 @@ main {
 }
 .commission-color {
     background-color: var(--soft-blue);
+}
+.main-product-detail {
+    position: relative;
+    background-color: var(--warm-black);
+    color: var(--just-white);
+    height: auto;
+}
+.product-detail__batata-logo {
+    width: 40px;
+    height: 24px;
+    background: url('./assets/icons/batata.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(0% - 12.5px);
+	left: calc(50% - 20px);
+}
+.product-detail__title {
+    padding-top: 64px;
+    text-align: center;
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.product-detail__title h2{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    padding-bottom: 24px;
+}
+.product-detail__title p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--dark-grey);
+    font-weight: 500;
+}
+.product-cards__container {
+    padding: 32px 0px;
+}
+.product-detail__card {
+    background-color: #282623;
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    padding: 16px 16px 22px;
+    text-align: start;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+}
+.product-detail__card span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.product-detail__card .clock {
+    background: url('./assets/icons/clock.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.product-detail__card .eye {
+    background: url('./assets/icons/eye.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.product-detail__card .check-circle {
+    background: url('./assets/icons/check-circle.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.product-detail__card .dollar-sign {
+    background: url('./assets/icons/dollar-sign.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.product__card-title {
+    margin: 12px 0;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+}
+.product__card-body {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--dark-grey);
+    font-weight: 500;
 }
