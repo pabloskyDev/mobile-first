@@ -124,13 +124,42 @@ main {
     line-height: 1.6rem;
     color: var(--grey);
 }
+.content-currency-table,
+.content-commission-table {
+    display: flex;
+    justify-content: center;
+}
+.currency-table__row,
+.commission-table__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.currency-table__row span,
+.commission-table__row span {
+    width: 12px;
+    height: 12px;
+    background: url('./assets/icons/right-arrow.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.currency-table__row .row-right:active {
+    background-color: var(--soft-orange);
+}
+.commission-table__row .row-left {
+    transform: rotate(180deg);
+}
+.commission-table__row .row-left:active {
+    background-color: var(--soft-blue);
+}
 .main-currency-table,
-.main-comission-table {
+.main-commission-table {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
@@ -138,7 +167,7 @@ main {
     justify-content: center;
 }
 .main-currency-table .table-title,
-.main-comission-table .table-title {
+.main-commission-table .table-title {
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
@@ -147,11 +176,11 @@ main {
 .main-currency-table .currency__title {
     color: var(--bitcoin-orange);
 }
-.main-comission-table .comission__title {
+.main-commission-table .commission__title {
     color: var(--secondary-blue);
 }
 .currency-table__container,
-.comission-table__container {
+.commission-table__container {
     display: flex;
     justify-content: center;
     width: 90%;
@@ -160,7 +189,7 @@ main {
     margin: 0 auto;
 }
 .currency-table__container .table,
-.comission-table__container .table {
+.commission-table__container .table {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -171,19 +200,19 @@ main {
     row-gap: 1px;
 }
 .table .table__top-left,
-.comission-table__container .table__top-left {
+.commission-table__container .table__top-left {
     border-top-left-radius: 15px;
 }
 .currency-table__container .table__top-right,
-.comission-table__container .table__top-right {
+.commission-table__container .table__top-right {
     border-top-right-radius: 15px;
 }
 .currency-table__container .table__bottom-left,
-.comission-table__container .table__bottom-left {
+.commission-table__container .table__bottom-left {
     border-bottom-left-radius: 15px;
 }
 .currency-table__container .table__bottom-right,
-.comission-table__container .table__bottom-right {
+.commission-table__container .table__bottom-right {
     border-bottom-right-radius: 15px;
 }
 .table div {
@@ -202,7 +231,7 @@ main {
     display: flex;
     justify-content: space-between;
 }
-.table .table__right-comission {
+.table .table__right-commission {
     font-size: 1.4rem;
     line-height: 17px;
     letter-spacing: -0.02em;
@@ -244,6 +273,6 @@ main {
 .currency-color {
     background-color: var(--soft-orange);
 }
-.comission-color {
+.commission-color {
     background-color: var(--soft-blue);
 }
