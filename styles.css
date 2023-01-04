@@ -431,8 +431,11 @@ main {
 }
 .plan-info-container .plan-card__price span {
     font-size: 1.2rem;
+    line-height: 1.5rem;
     font-weight: 500;
-    vertical-align: 25px;
+    position: absolute;
+    top: 15px;
+    left: -8px;
 }
 .plan-info-container .plan-card__saving {
     font-size: 1.2rem;
