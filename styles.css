@@ -294,7 +294,8 @@ main {
     top: calc(0% - 12.5px);
 	left: calc(50% - 20px);
 }
-.product-detail__title {
+.product-detail__title,
+.plans__title{
     padding-top: 64px;
     text-align: center;
     width: 90%;
@@ -302,12 +303,14 @@ main {
     max-width: 900px;
     margin: 0 auto;
 }
-.product-detail__title h2{
+.product-detail__title h2,
+.plans__title h2{
     font-size: 2.4rem;
     line-height: 2.6rem;
     padding-bottom: 24px;
 }
-.product-detail__title p {
+.product-detail__title p,
+.plans__title p {
     font-size: 1.4rem;
     line-height: 1.8rem;
     color: var(--dark-grey);
@@ -377,4 +380,85 @@ main {
     width: 288px;
     margin: 0 auto;
     text-align: center;
+}
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    background-color: #E5E5E5;
+    padding-bottom: 70px;
+}
+.plans-container__slider {
+    box-sizing: border-box;
+    padding: 50px 0 0;
+}
+.plans-container__card {
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    background-color: var(--just-white);
+    box-sizing: border-box;
+    padding: 16px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans-container__card .recommended {
+    margin: 0;
+    position: absolute;
+    top: calc(0% - 7%);
+    left: calc(50% - 48px);
+    padding: 8px;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.plans-container__card .plan-card__title{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    margin: 16px 0 8px;
+}
+.plan-info-container .plan-card__price {
+    position: relative;
+    display: inline-block;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    font-weight: 700;
+}
+.plan-info-container .plan-card__price span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    vertical-align: 25px;
+}
+.plan-info-container .plan-card__saving {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #757575;
+    margin: 16px 0;
+}
+.plan-info-container .plan-card__ca {
+    background: #FAF8F7;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    color: var(--warm-black);
+    padding: 15px 16px;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+}
+
+.plan-info-container .plan-card__ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('./assets/icons/right-arrow.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
