@@ -447,11 +447,13 @@ main {
 .plan-info-container .plan-card__ca {
     background: #FAF8F7;
     text-align: center;
+    font-family: "DM Sans", sans-serif;
     font-size: 1.4rem;
     line-height: 1.8rem;
     font-weight: 700;
     color: var(--warm-black);
-    padding: 15px 16px;
+    width: 150px;
+    height: 48px;
     border: 2px solid var(--bitcoin-orange);
     border-radius: 4px;
 }
@@ -460,8 +462,9 @@ main {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url('./assets/icons/right-arrow.svg');
+    background: url('./assets/icons/orange-right-arrow.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    vertical-align: text-bottom;
 }
