@@ -386,22 +386,35 @@ main {
     width: 100%;
     min-width: 320px;
     background-color: #E5E5E5;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 .plans-container__slider {
     box-sizing: border-box;
-    padding: 50px 0 0;
+    padding: 50px 20px 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.plans-container__slider::-webkit-scrollbar {
+    display: none;
 }
 .plans-container__card,
 .plans-basic-container__card,
 .plans-premium-container__card {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     box-sizing: border-box;
     padding: 16px;
-    margin: 0 auto 4rem;
+    margin: 0;
     text-align: center;
     border-radius: 8px;
 }
