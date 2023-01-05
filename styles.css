@@ -9,6 +9,7 @@
     --dark-grey: #808080;
     --off-white: #faf8f7;
     --just-white: #fff;
+    --basic-purple: #5e17a1;
 }
 * {
     box-sizing: border-box;
@@ -391,45 +392,75 @@ main {
     box-sizing: border-box;
     padding: 50px 0 0;
 }
-.plans-container__card {
+.plans-container__card,
+.plans-basic-container__card,
+.plans-premium-container__card {
     position: relative;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
-    background-color: var(--just-white);
     box-sizing: border-box;
     padding: 16px;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
-.plans-container__card .recommended {
+.plans-container__card {
+    background-color: var(--just-white);
+    box-shadow: 0px 4px 8px rgba(95, 73, 11, 0.89);
+}
+.plans-basic-container__card {
+    background-color: var(--warm-black);
+    color: var(--just-white);
+    box-shadow: 0px 4px 8px rgba(73, 12, 88, 0.897);
+}
+.plans-premium-container__card {
+    background-color: var(--just-white);
+    box-shadow: 0px 4px 8px rgba(9, 81, 122, 0.897);
+}
+.plans-container__card .recommended,
+.plans-basic-container__card .basic,
+.plans-premium-container__card .premium {
     margin: 0;
+    width: 96px;
     position: absolute;
     top: calc(0% - 7%);
     left: calc(50% - 48px);
     padding: 8px;
-    background-color: var(--bitcoin-orange);
     color: var(--just-white);
     border-radius: 8px;
     font-size: 1.2rem;
     line-height: 1.5rem;
 }
-.plans-container__card .plan-card__title{
+.plans-container__card .recommended {
+    background: linear-gradient(360deg, var(--bitcoin-orange), var(--warm-black));
+}
+.plans-basic-container__card .basic {
+    background: linear-gradient(360deg, var(--basic-purple), var(--warm-black));
+}
+.plans-premium-container__card .premium {
+    background: linear-gradient(360deg, var(--secondary-blue), var(--warm-black));
+}
+.plans-container__card .plan-card__title,
+.plans-basic-container__card .plan-basic-card__title,
+.plans-premium-container__card .plan-premium-card__title {
     font-size: 1.4rem;
     line-height: 1.8rem;
     font-weight: 500;
     margin: 16px 0 8px;
 }
-.plan-info-container .plan-card__price {
+.plan-info-container .plan-card__price,
+.plan-basic-info-container .plan-basic-card__price,
+.plan-premium-info-container .plan-premium-card__price {
     position: relative;
     display: inline-block;
     font-size: 5.2rem;
     line-height: 6.3rem;
     font-weight: 700;
 }
-.plan-info-container .plan-card__price span {
+.plan-info-container .plan-card__price span,
+.plan-basic-info-container .plan-basic-card__price span,
+.plan-premium-info-container .plan-premium-card__price span {
     font-size: 1.2rem;
     line-height: 1.5rem;
     font-weight: 500;
@@ -437,14 +468,18 @@ main {
     top: 15px;
     left: -8px;
 }
-.plan-info-container .plan-card__saving {
+.plan-info-container .plan-card__saving,
+.plan-basic-info-container .plan-basic-card__saving,
+.plan-premium-info-container .plan-premium-card__saving {
     font-size: 1.2rem;
     line-height: 1.5rem;
     font-weight: 500;
     color: #757575;
     margin: 16px 0;
 }
-.plan-info-container .plan-card__ca {
+.plan-info-container .plan-card__ca,
+.plan-basic-info-container .plan-basic-card__ca,
+.plan-premium-info-container .plan-premium-card__ca {
     background: #FAF8F7;
     text-align: center;
     font-family: "DM Sans", sans-serif;
@@ -454,11 +489,24 @@ main {
     color: var(--warm-black);
     width: 150px;
     height: 48px;
-    border: 2px solid var(--bitcoin-orange);
     border-radius: 4px;
 }
+.plan-info-container .plan-card__ca {
+    border: 2px solid var(--bitcoin-orange);
+    box-shadow: 0px 4px 8px rgba(95, 73, 11, 0.89);
+}
+.plan-basic-info-container .plan-basic-card__ca {
+    border: 2px solid var(--basic-purple);
+    box-shadow: 0px 4px 8px rgba(73, 12, 88, 0.897);
+}
+.plan-premium-info-container .plan-premium-card__ca {
+    border: 2px solid var(--secondary-blue);
+    box-shadow: 0px 4px 8px rgba(9, 81, 122, 0.897);
+}
 
-.plan-info-container .plan-card__ca span {
+.plan-info-container .plan-card__ca span,
+.plan-basic-info-container .plan-basic-card__ca span,
+.plan-premium-info-container .plan-premium-card__ca span {
     display: inline-block;
     width: 20px;
     height: 20px;
