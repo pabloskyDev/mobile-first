@@ -529,3 +529,26 @@ main {
     background-repeat: no-repeat;
     vertical-align: text-bottom;
 }
+footer {
+    background: #F7931A;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+}
+
+footer section ul {
+    list-style-type: none;
+}
+
+footer section ul li {
+    margin-bottom: 8px;
+}
+
+footer section ul li a{
+    color: var(--just-white);
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+}
