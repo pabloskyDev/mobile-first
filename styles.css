@@ -367,10 +367,9 @@ main {
 .bitcoin-img-container {
     width: 100%;
     height: 50vh;
-    background: url('./assets/img/bitcoinbaby2x.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* Propiedad para dejar fija una imagen de background */
+    background: url('./assets/img/bitcoinbaby2x.jpg') no-repeat center/cover;
+    background-attachment: fixed;
 }
 .bitcoin-img-container h2 {
     font-size: 2.4rem;
