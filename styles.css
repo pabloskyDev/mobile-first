@@ -324,7 +324,6 @@ main {
     background-color: #282623;
     width: 90%;
     min-width: 288px;
-    max-width: 900px;
     margin: 0 auto;
     margin-bottom: 16px;
     padding: 16px 16px 22px;
@@ -391,7 +390,7 @@ main {
     box-sizing: border-box;
     padding: 50px 20px 20px;
     width: 100%;
-    max-width: 900px;
+    max-width: 930px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -547,7 +546,7 @@ footer section ul li {
 
 footer section ul li a{
     color: var(--just-white);
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
     text-decoration: none;
 }
