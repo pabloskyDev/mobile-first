@@ -1,21 +1,38 @@
 # Mobile First 🚀
 
-_This project is focused in work with new technologies that let us to understand how mobile devices affect in our websites.
+This project is focused in work with HTML and CSS to understand how mobile devices affect in our websites.
 
-## Prerequisites 📋
+## Table of contents
 
-_All the things you need to know to work with this project.
+- [The challenge](#the-challenge)
+  - [Links](#links)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Useful resources](#useful-resources)
+- [Author](#author)
 
-``` git
-git clone this_project
-```
+### The challenge
 
-## Build with 🛠️
+Build a webpage using the resources provided by Platzi, this is part of a Platzi course.
 
-* HTML
-* CSS
-* JavaScript
+### Links
 
-## Authors ✒️
+- Live Site Design by me - [batatabit.dev](https://jb-dev-batatabit.netlify.app/)
+- Repository of the Website - [Github](https://github.com/pabloskyDev/mobile-first)
 
-* **Juan Pablo Betancur Martinez** - [pabloskyDev](https://github.com/pabloskyDev)
+
+### Build with 🛠️
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+
+### What I learned
+
+I learned how to create a page from nothing, and also add resize in different devices.
+
+### Author ✒️
+
+- **Juan Pablo Betancur Martinez** - [GitHub](https://github.com/pabloskyDev)
