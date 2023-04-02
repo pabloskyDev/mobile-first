@@ -1,2 +1,2 @@
-# Ignora la carpeta assets
-assets
+# Ignore .vscode
+.vscode
